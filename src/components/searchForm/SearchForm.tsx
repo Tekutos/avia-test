@@ -12,15 +12,21 @@ function SearchForm() {
         <div className={`${base}_inputBox`}>
           <div>
             <label htmlFor="from">Откуда</label>
-            <input type="text" id="from" placeholder="Город вылета" />
+            <input required type="text" id="from" placeholder="Город вылета" />
           </div>
           <div>
             <label htmlFor="where">Куда</label>
-            <input type="text" id="where" placeholder="Город прилёта" />
+            <input
+              required
+              type="text"
+              id="where"
+              placeholder="Город прилёта"
+            />
           </div>
           <div>
             <label htmlFor="fromDate">Когда</label>
             <DatePicker
+              required
               format={"d.M.y"}
               className={`${base}_inputFrom`}
               onChange={setValue}

@@ -1,18 +1,22 @@
 import React, { useEffect } from "react";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import { Route, Routes, useLocation, useNavigate } from "react-router-dom";
 import Avia from "./pages/Avia/Avia";
+import Tickets from "./pages/Tickets/Tickets";
 
 function Routing() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
-    navigate('avia')
-  }, [])
+    if (location.pathname === "/") {
+      navigate("avia");
+    }
+  }, []);
 
   return (
     <Routes>
-      <Route path="avia" element={<Avia/>}/>
-      <Route />
+      <Route path="avia" element={<Avia />} />
+      <Route path="avia/info" element={<Tickets />} />
     </Routes>
   );
 }
