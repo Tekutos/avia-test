@@ -53,12 +53,38 @@
   }
 }
 
-.search-form_inputFrom{
-    
-    .react-date-picker__wrapper{
-        flex-direction: row-reverse;
-        .react-date-picker__clear-button{
-            display: none;
-        }
+.search-form_inputFrom {
+  outline: none;
+  width: 208px;
+  // height: 40px;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  input {
+    padding: 0;
+    font: bold 14px "Roboto", sans-serif;
+
+
+  }
+  .react-date-picker__wrapper {
+    flex-direction: row-reverse;
+
+    .react-date-picker__clear-button {
+      display: none;
     }
+
+    .react-date-picker__calendar-button {
+      background-image: url(../../image/date-icon.svg);
+      width: 16px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 12px;
+      margin-right: 6px;
+      .react-date-picker__calendar-button__icon {
+        display: none;
+      }
+    }
+  }
 }

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./searchForm.scss";
 import DatePicker from "react-date-picker";
 
 function SearchForm() {
   const base = `search-form`;
+  const [value, setValue] = useState(new Date());
 
   return (
     <div className={base}>
@@ -19,11 +20,21 @@ function SearchForm() {
           </div>
           <div>
             <label htmlFor="fromDate">Когда</label>
-            <DatePicker className={`${base}_inputFrom`}/>
+            <DatePicker
+              format={"d.M.y"}
+              className={`${base}_inputFrom`}
+              onChange={setValue}
+              value={value}
+            />
           </div>
           <div>
             <label htmlFor="whereDate">Обратно</label>
-            <input type="date" id="whereDate" />
+            <DatePicker
+              format={"d.M.y"}
+              className={`${base}_inputFrom`}
+              onChange={setValue}
+              value={value}
+            />
           </div>
         </div>
         <div className={`${base}_btnBox`}>
