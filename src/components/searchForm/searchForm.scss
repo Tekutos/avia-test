@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  form {
+    margin: auto 0;
+  }
+  &_inputBox {
+    width: 962px;
+    height: 100px;
+    background: #5c87db;
+    border-radius: 15px 15px 0px 0px;
+    margin: 0;
+    padding: 12px 27px 30px 27px;
+    display: flex;
+    gap: 25px;
+    box-sizing: border-box;
+
+    label {
+      color: #ffffff;
+      font: normal 11px "Roboto", sans-serif;
+      font-style: regular;
+    }
+
+    input {
+      outline: none;
+      width: 208px;
+      height: 40px;
+      border: none;
+      padding: 12px;
+      border-radius: 10px;
+      box-sizing: border-box;
+    }
+  }
+  &_btnBox {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 86px;
+    padding: 29px 23px;
+
+    button {
+      width: 158px;
+      height: 40px;
+      background: #5c87db;
+      border-radius: 10px;
+      border: none;
+      color: #ffffff;
+      padding: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+.search-form_inputFrom{
+    
+    .react-date-picker__wrapper{
+        flex-direction: row-reverse;
+        .react-date-picker__clear-button{
+            display: none;
+        }
+    }
+}
