@@ -5,6 +5,9 @@ import DatePicker from "react-date-picker";
 function SearchForm() {
   const base = `search-form`;
   const [value, setValue] = useState(new Date());
+  // let dateToHome = new Date();
+  // dateToHome.setHours(dateToHome.getHours() + 168);
+  const [valueWhere, setValueWhere] = useState< null | Date>(null);
 
   return (
     <div className={base}>
@@ -38,8 +41,8 @@ function SearchForm() {
             <DatePicker
               format={"d.M.y"}
               className={`${base}_inputFrom`}
-              onChange={setValue}
-              value={value}
+              onChange={setValueWhere}
+              value={valueWhere}
             />
           </div>
         </div>

@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.ticket {
+  &_returnedBox {
+    background: #8ba5d8;
+    width: 132px;
+    height: 26px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+      font: 12px "Roboto", sans-serif;
+      font-weight: 550;
+      color: #ffffff;
+    }
+  }
+  &_logoBox {
+    width: 132px;
+    height: 200px;
+  }
+
+  &_logo {
+    background-image: url(../../image/логоS7.svg);
+    width: 39px;
+    height: 39px;
+    margin: 28px 0 0 47px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &_companyName {
+    width: 86px;
+    height: 21px;
+    font: normal 18px "Roboto", sans-serif;
+    color: #5c5c5c;
+    margin: 8px 0 0 23px;
+  }
+  &_whereBox{
+    span{
+        
+    }
+  }
+}
