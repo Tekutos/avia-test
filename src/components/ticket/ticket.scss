@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 .ticket {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   display: flex;
   box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
   border-radius: 15px;
